@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Panda Quiz </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	  </head>
+
+<body>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-8 mx-auto p-3" > <!-- change this later for columns -->
+
+				<div class="p-3">
+					<h1> Panda Quiz </h1>
+					<p> How much do you know about pandas? Take this quiz to test your knowledge! If you need some help, use <a href="https://en.wikipedia.org/wiki/Giant_panda#Population_chart">this article</a> to read up on pandas. </p>
+				</div>
+
+
+					<form>
+						<!-- Question 1:  text -->
+						<div class="p-3"> <!-- change classes -->
+						    <label class="form-label" for="question1">What country are pandas native to?</label>
+						    <input class="form-control" type="text" name="question1" id="question1">
+						</div>
+
+
+						<!-- Question 2: text -->
+						<div class="p-3">
+						    <label class="form-label" for="question2">What mountain range in that country do pandas primarily live in?</label>
+						    <input class="form-control" type="text" name="question2" id="question2">
+						</div>
+
+
+						<!-- Question 3: text area -->
+						<div class="p-3">
+							<label class="form-label" for="question3"> Describe what a panda looks like:</label>
+							<textarea class="form-control" name="question3" id="question3" rows="8"></textarea>
+						</div>
+
+
+					<!-- Question 4: check boxes -->
+						<div class="p-3">
+							<p>Click on the names that also refer to the giant panda: </p>
+							<div class="form-check">
+							<label class="form-check-label"><input class="form-check-input" type="checkbox" name="question4" value="aM">
+    					Ailuropoda melanoleuca
+  					</label>
+					</div>
+
+
+					<div class="form-check">
+						<label class="form-check-label"><input class="form-check-input" type="checkbox" name="question4" value="aF">
+						Ailurus fulgens
+					</label>
+			</div>
+
+				<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" type="checkbox" name="question4" value="redPanda">
+					Red panda
+				</label>
+			</div>
+
+			<div class="form-check">
+				<label class="form-check-label"><input class="form-check-input" type="checkbox" name="question4" value="panda">
+				Panda
+			</label>
+				</div>
+			</div>
+
+				<!-- Question 5: radio box -->
+				<div class ="p-3">
+					<p>How many subspecies of pandas are there?</p>
+
+					<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="subspecies" value="1"> 1 </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="subspecies" value="2"> 2 </label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="subspecies" value="3"> 3 </label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="subspecies" value="4"> 4 </label>
+				</div>
+			</div>
+
+				<!-- Question 6: select element -->
+				<div class="p-3">
+					<label class="form-label" for="question6"> Giant pandas are considered ______ species </label> <!-- change this to not be drop down -->
+					<select class="form-control" name="question6" id="question6" size="3">
+						<option selected> options</option>
+  					<option value="1">extinct</option>
+  					<option value="2">vulnerable</option>
+  					<option value="3">threatened</option>
+						<option value="4">thriving</option>
+						<option value="5">cool</option>
+						<option value="6">lame</option>
+					</select>
+				</div>
+
+				<!-- submit button -->
+
+				<div class="p-3">
+				<input class="btn btn-success" type="submit" value="Submit">
+
+				<!-- reset button -->
+				<input class="btn btn-danger" type="reset" value="Reset">
+			</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+
+</html>
